@@ -2,7 +2,7 @@ classdef position_controller_fw_MPC_new < pid_controller
     properties
         RateLimits = [7; 7; 9]; % in m/s
         OutputMax = [5; 5; 10]; % in m/s^2
-        VelMax = [40;40;20];
+        VelMax = [40;40;25];
         Q = zeros(6);
         q_x = 1;
         c = [1 1 1];
